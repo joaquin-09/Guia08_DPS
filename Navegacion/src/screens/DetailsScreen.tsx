@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { View, Text, StyleSheet, Image, FlatList, type ListRenderItem } from 'react-native';
-import type { DrawerScreenProps } from '@react-navigation/drawer';
+import type { BottomTabScreenProps } from '@react-navigation/bottom-tabs';
 import type { RootStackParamList } from '../navigation/types';
 
 type SocialMedia = 'facebook' | 'x' | 'instagram' | 'linkedin';
@@ -13,7 +13,7 @@ type Project = {
   socialMedia: SocialMedia[];
 };
 
-type Props = DrawerScreenProps<RootStackParamList, 'Details'>;
+type Props = BottomTabScreenProps<RootStackParamList, 'Details'>;
 
 export default function DetailsScreen({ navigation }: Props) {
   // Simulación de datos de proyectos de reciclaje
