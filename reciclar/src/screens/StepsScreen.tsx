@@ -13,13 +13,12 @@ const StepsScreen = ({ steps, navigation }: StepsScreenProps) => {
   const [currentStep, setCurrentStep] = React.useState(0);
 
   const handleNextStep = () => {
-    if (currentStep < steps.length - 1) {
-      setCurrentStep(currentStep + 1);
-    } else {
-      // Si estamos en el último paso, navegamos a otra pantalla o reiniciamos
-      navigation.navigate('Inicio'); // Ejemplo — cámbialo según tu flujo
-    }
-  };
+  if (currentStep < steps.length - 1) {
+    setCurrentStep(currentStep + 1);
+  } else {
+    setCurrentStep(0); // reinicia al paso 1
+  }
+};
 
   return (
     <StepScreen
