@@ -1,8 +1,8 @@
 import { View, Text, Button, StyleSheet, TouchableOpacity, Image } from 'react-native';
-import type { DrawerScreenProps } from '@react-navigation/drawer';
+import type { BottomTabScreenProps } from '@react-navigation/bottom-tabs';
 import type { RootStackParamList } from '../navigation/types';
 
-type Props = DrawerScreenProps<RootStackParamList, 'Home'>;
+type Props = BottomTabScreenProps<RootStackParamList, 'Home'>;
 
 // Definir el array de imágenes
 const images = [
